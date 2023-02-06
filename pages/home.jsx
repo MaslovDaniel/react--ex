@@ -1,10 +1,17 @@
-import { UserPreview } from '../cmps/user-preview.jsx'
+import { Animals} from '../cmps/animals-list.jsx'
 
 export function Home() {
+
+    const animalInfos = [
+        { type: 'Malayan Tiger', count: 787 },
+        { type: 'Mountain Gorilla', count: 212 },
+        { type: 'Fin Whale', count: 28 },
+    ]
+    
     return (
         <section>
-            <h2>Home Sweet Home</h2>
-            <UserPreview />
+           <h1>Animal</h1>
+            <Animals animalInfos={animalInfos} />
         </section>
     )
 }

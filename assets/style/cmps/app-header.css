@@ -4,6 +4,11 @@
   padding: 1em;
 }
 
+.animal-table {
+  background-color: red;
+  
+}
+
 @media(max-width: 720px) {
   .app-header {
     color: var(--clr2bg);
