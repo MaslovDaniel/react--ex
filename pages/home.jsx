@@ -1,4 +1,5 @@
 import { Animals} from '../cmps/animals-list.jsx'
+import { CountDown } from '../cmps/count-down.jsx'
 import { Seasons } from '../cmps/season-clock.jsx'
 
 export function Home() {
@@ -14,6 +15,9 @@ export function Home() {
            <h1>Animal</h1>
             <Animals animalInfos={animalInfos} />
             <Seasons />
+            <CountDown startFrom={10} onDone={()=> {
+                console.log('Done')
+            }}  />
         </section>
     )
 }

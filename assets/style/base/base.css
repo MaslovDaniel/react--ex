@@ -43,3 +43,19 @@ object {
 .debug * {
   outline: 1px solid gold
 }
+
+.season-clock {
+height: 300px;
+width: 300px;
+background-color: aqua;
+text-align: center;
+
+}
+
+.dark-mode {
+  background-color: bisque;
+}
+
+.red-text {
+  color: red;
+}

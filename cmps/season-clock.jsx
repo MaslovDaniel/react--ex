@@ -6,6 +6,16 @@ export function Seasons() {
     const [time, setTime] = useState(new Date())
     const [isDark , setIsDark] = useState(false)
 
+    const intervalIdRef = useRef()
+
+    useEffect(() => {
+        intervalIdRef.current = setInterval(() => {
+            setTime(new Date())
+        }, 1000)
+
+    }, [])
+
+
 
     const day = utilService.getDayName(time)
     const month = utilService.getMonthName(time)
