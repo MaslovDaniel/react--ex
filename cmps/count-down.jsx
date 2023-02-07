@@ -22,7 +22,8 @@ export function CountDown({ startFrom , onDone }) {
     }, [count])
 
 
-    function checkIfDone(count){
+    function 
+    checkIfDone(count){
         if(count ===0) {
             clearInterval(intervalIdRef.current) 
             onDone()
