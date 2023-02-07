@@ -6,7 +6,8 @@ export const utilService = {
     saveToStorage,
     padNum,
     getDayName,
-    getMonthName
+    getMonthName,
+    getSeason
 }
 
 function makeId(length = 6) {
@@ -59,4 +60,18 @@ function getMonthName(date) {
         'July', 'August', 'September', 'October', 'November', 'December'
     ]
     return monthNames[date.getMonth()]
+}
+
+function getSeason(date) {
+    const month = date.getMonth();
+
+    if (month === 11 || month === 0 || month === 1) {
+        return 'Winter';
+    } else if (month >= 2 && month <= 4) {
+        return 'Spring';
+    } else if (month >= 5 && month <= 7) {
+        return 'Summer';
+    } else {
+        return 'Autumn';
+    }
 }
